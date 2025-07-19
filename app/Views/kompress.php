@@ -133,20 +133,20 @@
                 reader.onload = () => {
                     const dataURL = reader.result;
 
-                    // Preview asli
+                    
                     originalPreview.innerHTML = `<img src="${dataURL}" class="img-fluid rounded" />`;
                     originalInfo.textContent = `Nama: ${file.name}, Ukuran: ${formatBytes(file.size)}`;
 
-                    // Set form values untuk gambar asli
+                   
                     originalNameInput.value = file.name;
                     originalSizeInput.value = file.size;
 
-                    // Set input file asli ke form (agar bisa dikirim)
+                    
                     const dt = new DataTransfer();
                     dt.items.add(file);
                     originalFileInput.files = dt.files;
 
-                    // Kompres gambar
+                    
                     compressImage(dataURL, file.name);
                 };
                 reader.readAsDataURL(file);
@@ -171,13 +171,13 @@
 
                 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-                // Kompres ke blob (jpeg 60%)
+                
                 canvas.toBlob((blob) => {
                     const compressedUrl = URL.createObjectURL(blob);
                     compressedPreview.innerHTML = `<img src="${compressedUrl}" class="img-fluid rounded" />`;
                     compressedInfo.textContent = `Nama: compressed_${originalName}, Ukuran: ${formatBytes(blob.size)}`;
 
-                    // Konversi blob ke base64 untuk dikirim via input hidden
+                  
                     const reader = new FileReader();
                     reader.onloadend = () => {
                         compressedDataInput.value = reader.result;
