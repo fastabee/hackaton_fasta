@@ -24,6 +24,7 @@ class Home extends BaseController
     public function index(): string
     {
         $data = array(
+            'body' => 'dashboard',
             'user' => $this->UserModel->getUser(),
         );
         return view('template', $data);

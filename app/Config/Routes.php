@@ -26,3 +26,11 @@ $routes->post('insert_halte', 'Halte::insert');
 $routes->post('update_halte', 'Halte::update');
 $routes->post('delete_halte', 'Halte::delete');
 $routes->post('import/halte', 'Halte::import');
+
+$routes->get('tracking/rute', 'Tracking::index');
+$routes->post('rute/trackingRute', 'Tracking::trackingRute');
+
+$routes->get('kompress/images', 'Kompress::index');
+$routes->post('submit/kompress', 'Kompress::insert');
+
+$routes->get('riwayat_kompress', 'Kompress::riwayat');

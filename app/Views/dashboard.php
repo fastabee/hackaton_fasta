@@ -4,7 +4,7 @@
             <div class="card w-100">
                 <div class="card-body position-relative">
                     <div>
-                        <h5 class="mb-1 fw-bold">Welcome Jonathan Deo</h5>
+                        <h5 class="mb-1 fw-bold">Welcome <?php echo session('nama') ?></h5>
                         <p class="fs-3 mb-3 pb-1">Check all the statastics</p>
                         <button class="btn btn-primary rounded-pill" type="button">
                             Visit Now

@@ -93,16 +93,16 @@
                                     <div class="d-flex align-items-center mx-7 py-9 border-bottom">
                                         <img src="<?php echo base_url('public/template/') ?>assets/images/profile/user-1.jpg" alt="user" width="90" class="rounded-circle" />
                                         <div class="ms-4">
-                                            <h4 class="mb-0 fs-5 fw-normal">Mike Nielsen</h4>
-                                            <span class="text-muted">super admin</span>
+                                            <h4 class="mb-0 fs-5 fw-normal"><?php echo session('nama') ?></h4>
+                                            <span class="text-muted"><?php echo session('username') ?></span>
                                             <p class="text-muted mb-0 mt-1 d-flex align-items-center">
                                                 <iconify-icon icon="solar:mailbox-line-duotone" class="fs-4 me-1"></iconify-icon>
-                                                info@spike.com
+                                                <?php echo session('email') ?>
                                             </p>
                                         </div>
                                     </div>
 
-                                    <div class="message-body">
+                                    <!-- <div class="message-body">
                                         <a href="<?php echo base_url('public/template/') ?>dark/page-user-profile.html" class="dropdown-item px-7 d-flex align-items-center py-6">
                                             <span class="btn px-3 py-2 bg-info-subtle rounded-1 text-info shadow-none">
                                                 <iconify-icon icon="solar:wallet-2-line-duotone" class="fs-7"></iconify-icon>
@@ -116,10 +116,10 @@
                                         </a>
 
 
-                                    </div>
+                                    </div> -->
 
                                     <div class="py-6 px-7 mb-1">
-                                        <a href="<?php echo base_url('public/template/') ?>dark/authentication-login.html" class="btn btn-primary w-100">Log Out</a>
+                                        <a href="<?php echo base_url('logout') ?>" class="btn btn-primary w-100">Log Out</a>
                                     </div>
                                 </div>
                             </div>

@@ -26,7 +26,7 @@
                 </li>
 
                 <li class="sidebar-item">
-                    <a class="sidebar-link sidebar-link primary-hover-bg" href="<?php echo base_url('public/template/') ?>dark/index.html" aria-expanded="false">
+                    <a class="sidebar-link sidebar-link primary-hover-bg" href="<?php echo base_url('/') ?> " aria-expanded="false">
                         <span class="aside-icon p-2 bg-primary-subtle rounded-1">
                             <iconify-icon icon="solar:screencast-2-line-duotone" class="fs-6"></iconify-icon>
                         </span>
@@ -47,6 +47,50 @@
                         <span class="hide-menu ps-1">Halte</span>
                     </a>
                 </li>
+
+                <li class="nav-small-cap">
+                    <iconify-icon icon="solar:menu-dots-bold-duotone" class="nav-small-cap-icon fs-5"></iconify-icon>
+                    <span class="hide-menu">Tracking</span>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link sidebar-link primary-hover-bg" href="<?php echo base_url('tracking/rute') ?>" aria-expanded="false">
+                        <span class="aside-icon p-2 bg-primary-subtle rounded-1">
+                            <iconify-icon icon="solar:screencast-2-line-duotone" class="fs-6"></iconify-icon>
+                        </span>
+                        <span class="hide-menu ps-1">Cek Rute</span>
+                    </a>
+                </li>
+
+                <li class="nav-small-cap">
+                    <iconify-icon icon="solar:menu-dots-bold-duotone" class="nav-small-cap-icon fs-5"></iconify-icon>
+                    <span class="hide-menu">Kompress</span>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link sidebar-link primary-hover-bg" href="<?php echo base_url('kompress/images') ?>" aria-expanded="false">
+                        <span class="aside-icon p-2 bg-primary-subtle rounded-1">
+                            <iconify-icon icon="solar:screencast-2-line-duotone" class="fs-6"></iconify-icon>
+                        </span>
+                        <span class="hide-menu ps-1">Kompress Images</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-small-cap">
+                    <iconify-icon icon="solar:menu-dots-bold-duotone" class="nav-small-cap-icon fs-5"></iconify-icon>
+                    <span class="hide-menu">Riwayat Kompress</span>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link sidebar-link primary-hover-bg" href="<?php echo base_url('riwayat_kompress') ?>" aria-expanded="false">
+                        <span class="aside-icon p-2 bg-primary-subtle rounded-1">
+                            <iconify-icon icon="solar:screencast-2-line-duotone" class="fs-6"></iconify-icon>
+                        </span>
+                        <span class="hide-menu ps-1"> Riwayat Kompress Images</span>
+                    </a>
+                </li>
+
         </nav>
         <!-- End Sidebar navigation -->
     </div>

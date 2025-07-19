@@ -43,7 +43,7 @@ class Login extends BaseController
 
                 session()->set($newSession);
                 session()->setFlashdata('sukses', 'Selamat Anda Berhasil Login');
-                return redirect()->to(base_url('dashboard'));
+                return redirect()->to(base_url('/'));
             } else {
                 session()->setFlashdata('gagal', 'email atau Password salah');
                 return redirect()->to(base_url('login'));
