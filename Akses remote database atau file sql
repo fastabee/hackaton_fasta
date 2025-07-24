@@ -1,0 +1,8 @@
+
+database.default.hostname = hackatonfasta-fastabikulhackaton.b.aivencloud.com
+database.default.database = hackaton_fasta
+database.default.username = avnadmin
+database.default.password = AVNS_k1LAusQxWcMK_iI-Aq4
+database.default.DBDriver = Postgre
+
+dapat langsung remote menggunakan navicat atau pgadmin
