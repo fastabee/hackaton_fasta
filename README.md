@@ -14,3 +14,12 @@ buat php spark create:migration "name_tabel" -> sesuaikan dengan model yang ters
 buat file migrasi jika ingin mengubah databse()
 
 tidak perlu "php spark serve"  langsung localhost/nama folder ini (begitu juga setelah dihosting)
+
+akses database atau sql
+database.default.hostname = hackatonfasta-fastabikulhackaton.b.aivencloud.com
+database.default.database = hackaton_fasta
+database.default.username = avnadmin
+database.default.password = AVNS_k1LAusQxWcMK_iI-Aq4
+database.default.DBDriver = Postgre
+
+dapat langsung remote menggunakan navicat atau pgadmin
