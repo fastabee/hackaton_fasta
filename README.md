@@ -1,8 +1,5 @@
-penggunaan docker 
-
-docker container rm -f hackaton_container
-    docker image rm hackaton_fasta:v24
-    docker build --no-cache -t hackaton_fasta:v24 .
+penggunaan docker
+    
     docker run -d -p 8080:80 --name hackaton_container hackaton_fasta:v24
 
 nb : sesuaikan nama container dan port
@@ -11,6 +8,7 @@ nb : sesuaikan nama container dan port
 akses lokal ::
 
 buat php spark create:migration "name_tabel" -> sesuaikan dengan model yang tersedia
+
 buat file migrasi jika ingin mengubah databse()
 
 tidak perlu "php spark serve"  langsung localhost/nama folder ini (begitu juga setelah dihosting)
